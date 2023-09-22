@@ -313,7 +313,7 @@ function getCardId(value) {
   ];
   const suitRanks = ['♣', '♦', '♥', '♠'];
 
-  const rank = cardRanks.indexOf(value.replace(value[value.length - 1], '')) + 13 * suitRanks.indexOf(value[value.length - 1]);
+  const rank = cardRanks.indexOf(value.replace(value[value.length - 1], '')) + cardRanks.length * suitRanks.indexOf(value[value.length - 1]);
 
   return rank;
 }
